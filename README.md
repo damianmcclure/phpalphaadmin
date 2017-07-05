@@ -21,7 +21,7 @@ The console lets you execute ALL php code. So its very important you change the 
 ## ID Column
 The ID Column is REQUIRED to work with phpAlphaAdmin. Whether you do 1, 2, 3, or you md5 mktime() it doesn't matter. But the first column NEEDS to be unique, and no important info stored in it.
 ## Releases
-[phpAlphaAdmin 1.1.zip](https://github.com/mcclureski/phpalphaadmin/releases/download/1.1/phpAlphaAdmin1.2.zip)
+[phpAlphaAdmin 1.1.zip](https://github.com/mcclureski/phpalphaadmin/releases/download/1.1/phpAlphaAdmin1.2.zip) <br />
 [phpAlphaDB.zip](https://www.unrealsecurity.net/downloads/phpAlphaDB.zip)
 ## Contributers
 JQuery -> Who Made phpAlphaDB And Helped A Bit.
