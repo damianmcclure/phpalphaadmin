@@ -24,7 +24,7 @@ The ID Column is REQUIRED to work with phpAlphaAdmin. Whether you do 1, 2, 3, or
 [phpAlphaAdmin 1.1.zip](https://github.com/mcclureski/phpalphaadmin/releases/download/1.1/phpAlphaAdmin1.2.zip) <br />
 [phpAlphaDB.zip](https://www.unrealsecurity.net/downloads/phpAlphaDB.zip)
 ## Contributors
-JQuery -> Who Made phpAlphaDB And Helped A Bit.
+JQuery -> Who Made phpAlphaDB And Helped A Bit. <br />
 StackOverFlow -> Coding dev's best friend
 ## License
 I released it under the GNU General Public License v3.0 cuz why not.
