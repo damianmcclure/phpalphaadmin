@@ -1,0 +1,30 @@
+<?php
+	$phrases = array(
+		"phpAlphaAdmin" => "phpAlphaAdmin",
+		"phpAlphaDB" => "phpAlphaDB", 
+		"working" => "On työskennellen kunnolla", 
+		"notworking" => "Ei ole työskennellen kunnolla",
+		"rows" => "rivit",
+		"columns" => "sarakkeet",
+		"encryption" => "salakirjoitus",
+		"on" => "päällä",
+		"off" => "pois",
+		"add" => "lisätä",
+		"edit" => "muokkaus",
+		"delete" => "pyyhkiä",
+		"options" => "optiot",
+		"change" => "muutos",
+		"rememberthat" => "muistakaa, että uusimmat sisääntulot ovat ensimmäisiä.",
+		"browserzoom" => "Olkaa hyvä ja käyttäkää teidän selaimianne zoomaamaan kauemmas, funktio, nähdä kaikki sisääntulot, jos ne tulvivat yli.",
+		"basicinfo" => "Perustieto",
+		"databases" => "Tietokannat:",
+		"console" => "soittopöytä",
+		"docs" => "dokumentaatio",
+		"execute" => "toteuttaa",
+		"codewas" => "Koodi suoritettiin sisällä",
+		"seconds" => "sekuntia.",
+		"goingback" => "Paluu 5 sekunnissa",
+		"faildel" => "Rivi epäonnistui poistamalla",
+		"sucdel" => "Rivi poistettiin onnistuneesti"
+	);
+?>
