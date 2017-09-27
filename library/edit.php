@@ -11,21 +11,20 @@
 		if($cPass === $aAdminPass){
 			if($ipauth === true){
 				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
-					edit();
-				} else {
 					
+				} else {
+					die();
 				}
 			} else {
-				edit();
+				
 			}
 		} else {
-			
+			die();
 		}
 	} else {
-		
+		die();
 	}
 
-function edit(){
 	if($cfield === 1){
 			echo 'You Cannot Edit Without An ID, Or With An ID Only. Going Back.';
 		?> <meta http-equiv="refresh" content="2; url=control.php?db=<?php echo $_GET['db'];?>"> <?php
@@ -724,5 +723,5 @@ function edit(){
 	if($cfield > 22){
 		echo 'Sorry, Databases With 23 Or More Are Not Able To Be Edited. Maybe In A Future Update.';
 	}
-}
+
 ?>
