@@ -20,6 +20,10 @@ Right now there is only max 22 columns, for various reasons. You shouldn't need 
 The console lets you execute ALL php code. So its very important you change the password. You can check the docs for valid functions to use, but most softwares will create databases and info themselves.
 ## ID Column
 The ID Column is REQUIRED to work with phpAlphaAdmin. Whether you do 1, 2, 3, or you md5 mktime() it doesn't matter. But the first column NEEDS to be unique, and no important info stored in it.
+## Demo
+Working demo is now open to public.
+Console is disabled for obvious reasons.
+http://phpalphadb.rf.gd/paa-demo/
 ## Releases
 [phpAlphaAdmin 1.1.zip](https://github.com/mcclureski/phpalphaadmin/releases/download/1.1/phpAlphaAdmin1.2.zip) <br />
 [phpAlphaDB.zip](https://www.unrealsecurity.net/downloads/phpAlphaDB.zip)
