@@ -1,4 +1,31 @@
 <?php
+	if(!isset($aAdminUser)){
+		die();
+	}
+
+	if(!isset($aAdminPass)){
+		die();
+	}
+
+	if($cUser === $aAdminUser){
+		if($cPass === $aAdminPass){
+			if($ipauth === true){
+				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
+					addrow();
+				} else {
+					
+				}
+			} else {
+				addrow();
+			}
+		} else {
+			
+		}
+	} else {
+		
+	}
+
+function addrow(){
 	if($cfield === 0 or $cfield === NULL){
 		if($_GET['srows'] === NULL){
 			echo '<form method="post">';
@@ -2312,4 +2339,5 @@
 	if($cfield > 22){
 		echo 'Sorry, Databases With 23 Or More Are Not Able To Be Edited. Maybe In A Future Update.';
 	}
+}
 ?>
