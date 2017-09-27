@@ -6,31 +6,31 @@
 	include('config.php');
 	include('funcs.php');
 
-	if($ipauth === true){
-		if($cUser === $aAdminUser or $cPass === $aAdminPass or $aAdminIP === $_SERVER['REMOTE_ADDR']){
-			header('Location: control.php');
+	if($cUser === $aAdminUser){
+		if($cPass === $aAdminPass){
+			if($ipauth === true){
+				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
+					header("Location: control.php");
+				} else {
+					
+				}
+			} else {
+				header("Location: control.php");
+			}
 		} else {
 			
 		}
-
-		if($_POST['aLogin']){
-			setcookie('aAdminUser', $pUser);
-			setcookie('aAdminPass', $pPass);
-			header('Location: control.php');
-		}
-	} else if($ipauth === false){
-		if($cUser === $aAdminUser or $cPass === $aAdminPass){
-			header('Location: control.php');
-		} else {
-			
-		}
-
-		if($_POST){
-			setcookie('aAdminUser', $pUser);
-			setcookie('aAdminPass', $pPass);
-			header('Location: control.php');
-		}
+	} else {
+		
 	}
+
+	if($_POST['aLogin']){
+		setcookie('aAdminUser', $pUser);
+		setcookie('aAdminPass', $pPass);
+		header('Location: control.php');
+	}
+
+
 ?>
 <html>
 <head>
