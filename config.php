@@ -11,7 +11,7 @@
 
 	# Here Is Where You Edit phpAlphaAdmin Login.
 	$aAdminUser = 'alpha';
-	$aAdminPass = md5('pswd');
+	$aAdminPass = md5('pswd'); # I implore you to put the hash string here (use a md5 hash website)
 	
 	# If You Want, You Can Add An Extra Layer Of Security By Adding IP Authentication. NOTE: This Does Not Work If You Are On localhost, Or If You Are Dynamic. Disabled By Default.
 	$ipauth = false;
@@ -26,4 +26,3 @@
 	$cUser = $_COOKIE['aAdminUser'];
 	$cPass = $_COOKIE['aAdminPass'];
 ?>
-
