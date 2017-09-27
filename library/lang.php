@@ -1,6 +1,6 @@
 <?php
 	$language = $_COOKIE['language'];
-	if($language === NULL){
+	if(!isset($language)){
 		setcookie('language', 'english');
 	}
 	include('library/lang/'.$language.'.php');
