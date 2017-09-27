@@ -5,19 +5,25 @@
 	include('config.php');
 	include('funcs.php');
 
-	if($ipauth === true){
-		if($cUser != $aAdminUser and $cPass != $aAdminPass and $aAdminIP != $_SERVER['REMOTE_ADDR']){
+	if($cUser === $aAdminUser){
+		if($cPass === $aAdminPass){
+			if($ipauth === true){
+				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
+					
+				} else {
+					header('Location: index.php');
+					die();
+				}
+			} else {
+				
+			}
+		} else {
 			header('Location: index.php');
-		} else if($cUser === $aAdminUser and $cPass === $aAdminPass and $aAdminIP != $_SERVER['REMOTE_ADDR']){
-			
+			die();
 		}
-		
-	} else if($ipauth === false){
-		if($cUser != $aAdminUser and $cPass != $aAdminPass){
-			header('Location: index.php');
-		} else if($cUser === $aAdminUser and $cPass === $aAdminPass) {
-			
-		}
+	} else {
+		header('Location: index.php');
+		die();
 	}
 ?>
 <html>
