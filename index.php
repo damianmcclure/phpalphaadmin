@@ -24,7 +24,7 @@
 		
 	}
 
-	if($_POST['aLogin']){
+	if($_POST){
 		setcookie('aAdminUser', $pUser);
 		setcookie('aAdminPass', $pPass);
 		header('Location: control.php');
