@@ -67,10 +67,10 @@
 			'<span style="font-weight:bold; font-size: 1.3em;">'.$phrases["basicinfo"].'</span><br>'.
 			$phrases["databases"].' '.count(db_list());
 			echo '<div class="alphahr"><hr></div>';
-			echo 'phpAlphaAdmin 1.1<br><br>';
-			echo 'Features:<ol><li>Can Write, Read, Add Rows, Create Databases, and Drop Databases. Fully Functional.</li></ol>';
+			echo 'phpAlphaAdmin a1.2<br><br>';
+			echo 'Features:<ol><li>Fixed Security Issues.</li></ol>';
 			echo '<br>';
-			echo 'Bugs:<ol><li>Translations Are Not Fully Functional, English Is Only Language For Now.</li></ol>';
+			echo 'Bugs:<ol><li>Translations Are STILL Not Fully Functional, English Is Only Language For Now.</li></ol>';
 		} else if($_GET['db'] != NULL){
 			$name = $_GET['db'];
 			$rows = db_rows($name);
