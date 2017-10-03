@@ -11,11 +11,13 @@
 			if($ipauth === true){
 				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
 					header("Location: control.php");
+					die();
 				} else {
 					
 				}
 			} else {
 				header("Location: control.php");
+				die();
 			}
 		} else {
 			
