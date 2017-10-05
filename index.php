@@ -6,8 +6,8 @@
 	include('config.php');
 	include('funcs.php');
 
-	if($cUser === $aAdminUser || (isset($pUser) && $pUser===$aAdminUser)){
-		if($cPass === $aAdminPass || (isset($pPass) && $pUser===$aAdminPass)){
+	if($cUser === $aAdminUser || (isset($pUser) && $pUser === $aAdminUser)){
+		if($cPass === $aAdminPass || (isset($pPass) && $pPass === $aAdminPass)){
 			if($ipauth === true){
 				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
 					header("Location: control.php");
