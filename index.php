@@ -11,12 +11,16 @@
 			if($ipauth === true){
 				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
 					header("Location: control.php");
+					setcookie('aAdminUser', $pUser);
+					setcookie('aAdminPass', $pPass);
 					die();
 				} else {
 					
 				}
 			} else {
 				header("Location: control.php");
+				setcookie('aAdminUser', $pUser);
+				setcookie('aAdminPass', $pPass);
 				die();
 			}
 		} else {
@@ -25,14 +29,6 @@
 	} else {
 		
 	}
-
-	if($_POST){
-		setcookie('aAdminUser', $pUser);
-		setcookie('aAdminPass', $pPass);
-		header('Location: control.php');
-	}
-
-
 ?>
 <html>
 <head>
