@@ -6,21 +6,27 @@
 	include('config.php');
 	include('funcs.php');
 
-	if($cUser === $aAdminUser){
-		if($cPass === $aAdminPass){
+	if($cUser === $aAdminUser || (isset($pUser) && $pUser===$aAdminUser)){
+		if($cPass === $aAdminPass || (isset($pPass) && $pUser===$aAdminPass)){
 			if($ipauth === true){
 				if($aAdminIP === $_SERVER['REMOTE_ADDR']){
 					header("Location: control.php");
-					setcookie('aAdminUser', $pUser);
-					setcookie('aAdminPass', $pPass);
+					if(isset($pUser) && isset($pPass))
+					{
+						setcookie('aAdminUser', $pUser);
+						setcookie('aAdminPass', $pPass);
+					}
 					die();
 				} else {
 					
 				}
 			} else {
 				header("Location: control.php");
-				setcookie('aAdminUser', $pUser);
-				setcookie('aAdminPass', $pPass);
+				if(isset($pUser) && isset($pPass))
+				{
+					setcookie('aAdminUser', $pUser);
+					setcookie('aAdminPass', $pPass);
+				}
 				die();
 			}
 		} else {
